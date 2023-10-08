@@ -35,33 +35,33 @@ const getData = async (search) => {
 };
 
 const display = (data) => {
-  
-    if(data.length==0){
-        document.querySelector(".result").innerHTML =  `
+
+  if (data.length == 0) {
+    document.querySelector(".result").innerHTML = `
         <div class="bg-secondary d-flex justify-content-center p-5">
         <p class="text-white">no results found ...</p>
 
       </div>
         `
-    }else{
-        let result = "";
-        data.forEach((element) => {
-          result += `
+  } else {
+    let result = "";
+    data.forEach((element) => {
+      result += `
               <div class="item col-3 my-4">
                       <div class="card" >
                           <div class="card-body">
                             <h4 class="card-title my-3">${element.title}</h4>
                             <h5 class="card-subtitle mb-2 text-muted">${element.snippet}</h5>
-                            <a href="https://en.wikipedia.org/wiki/${element.title}" class="card-link">Read More</a>
+                            <a href="https://en.wikipedia.org/wiki/${element.title}" class="card-link">Read </a>
                           </div>
                         </div>
                   </div>
               `;
-        });
-      
-        document.querySelector(".result").innerHTML = result;
-    }
-  
+    });
+
+    document.querySelector(".result").innerHTML = result;
+  }
+
 
 };
 
