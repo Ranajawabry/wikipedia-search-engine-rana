@@ -52,7 +52,7 @@ const display = (data) => {
                           <div class="card-body">
                             <h4 class="card-title my-3">${element.title}</h4>
                             <h5 class="card-subtitle mb-2 text-muted">${element.snippet}</h5>
-                            <a href="#" class="card-link">Card link</a>
+                            <a href="https://en.wikipedia.org/wiki/${element.title}" class="card-link">Read More</a>
                           </div>
                         </div>
                   </div>
